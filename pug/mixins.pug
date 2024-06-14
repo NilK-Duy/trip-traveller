@@ -1,29 +1,26 @@
 mixin tourItem(image, price, title, review, reviewCount, duration, tourPrice)
-  .tour
-    .tour-top
+  .tour-item
+    .tour-background
       img.tour-image(src= image, alt="bali")
       span.tour-price= price
     .tour-content
       h3.tour-title= title
       .tour-rating
         .tour-review
-          .tour-star
-            img(src="./images/star.png", alt="tour-rating")
-          .tour-review-count
-            span #{review} (#{reviewCount} reviews)
+          img.tour-star(src="./images/star.png", alt="tour-rating")
+          span.tour-review-count #{review} (#{reviewCount} reviews)
         span.tour-duration Duration: #{duration} hours
       a.tour-button(href="#", target="_blank", rel="noopener noreferrer") Tours Price $#{tourPrice}
 
 mixin popularItem(image, time, title, review, reviewCount)
   .popular-item
-    .popular-top
+    .popular-background
       .popular-overlay
       img.popular-image(src= image, alt="")
       span.popular-laber Must See
     .popular-content
-      span.popular-time= time
+      time.popular-time= time
       h3.popular-title= title
       .popular-review
-        img(src="./images/star.png", alt="popular-rating")
-        span #{review} (#{reviewCount} reviews)
-
+        img.popular-star(src="./images/star.png", alt="popular-rating")
+        span.popular-review-count #{review} (#{reviewCount} reviews)

@@ -84,8 +84,40 @@ _line-height_: Khoảng cách giữa các dòng
 - _min-width_: breakpoints
 - _max-width_: breakpoints - 0.02px
 - _media queries_:
+  <!--
+  @media screen and (min-width: breakpoints)
+  @media screen and (min-width: 320px){}
+  -->
+
+  <!--
+  @media screen and (max-width: breakpoints -0.02px)
+  @media screen and (max-width: 1023.98px){}
+  -->
+
+  <!-- @media screen and (min-width: breakpoints) and (max-width: breakpooints){} -->
 
 - _transform_: translate(translateX, translateY), skew(skewX, skewY), rotate(rotateX,Y,Z), scale(X, Y)
 - `translateX` : Nếu giá trị là số dương thì nó sẽ di chuyển qua bên phải, ngược lại thì di chuyển qua bên trái
 - `translateY` : Nếu giá trị là số dương thì nó đi xuống, ngược lại nó sẽ đi lên
 - `value` : 10px, 20px, -15px, -30px, 10%, lưu ý khi sử dụng % thì % ở đây chính là độ rộng hoặc chiều cao của khối chúng ta đang áp dụng thuộc tính transform và hàm translate
+
+- _variables_: Biến là gì? Khai báo như thế nào? Cách sử dụng ra sao? Ưu và nhược điểm của nó là gì?
+<!-- usage: var(--primary-color) -->
+
+- _grid_: Dàn layout cực nhanh
+  <!--
+  align-items: start end center baseline stretch
+  justify-content: start end center space-between space-around space-evenly
+  track-line: 1 -1
+  grid-template-columns: value value value ... n-value: px, %, em, rem
+  1fr = fraction unit
+  -->
+
+  <!-- grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 200px repeat(2, 1fr) 300px;  -->
+
+  <!-- grid-auto-flow: column;
+  grid-auto-columns: 1fr; -->
+
+  <!-- --columns: 4;
+  grid-template-columns: repeat(var(--columns), 1fr); -->
