@@ -77,4 +77,10 @@ _line-height_: Khoảng cách giữa các dòng
 
 - `relative` : Khi sử dụng giá trị này thì phải lưu ý xem phần tử con của nó có sử dụng position là `absolute` không
 
-- `absolute` : phần tử sử dụng giá trị này sẽ có thể tùy biến vị trí giựa trên phần tử cha chứa giá trị relative, nếu không có phần tử nào thì sẽ tùy biến vị trí theo <body>
+- `absolute` : Khi sử dụng giá trị này thì phải lưu ý xem phần tử chứa nó có gần nhất có sử dụng _position_ là `absolute` hay `relative` không ?
+
+- _reponsive_:
+- _breakpoints_: 320px 480px 768px 1024px 1200px 1366px 1440px 1600px 1920px
+- _min-width_: breakpoints
+- _max-width_: breakpoints - 0.02px
+- _media queries_:
