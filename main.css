@@ -11,7 +11,7 @@ body {
   font-weight: 500;
   font-style: normal;
   background-color: #f5f5f5;
-  padding: 30px 0;
+  padding: 30px 24px;
 }
 
 .tour-list-container {
@@ -113,4 +113,41 @@ body {
   padding: 5px 16px;
   line-height: 20px;
   border-radius: 4px;
+}
+
+/* @media screen and (min-width: breakpoints) */
+/* @media screen and (min-width: 320px){} */
+
+/* @media screen and (max-width: breakpoints -0.02px) */
+/* @media screen and (max-width: 1023.98px){} */
+
+/* @media screen and (min-width: breakpoints) and (max-width: breakpooints){} */
+
+@media screen and (max-width: 767.68px) {
+  .tour-list {
+    row-gap: 20px;
+  }
+  .tour {
+    width: 100%;
+  }
+  .tour-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .tour-button,
+  .tour-rating {
+    font-size: 12px;
+  }
+  .tour-content {
+    padding: 17px 17px 9px;
+  }
+  .tour-image {
+    height: 211px;
+  }
+}
+
+@media screen and (min-width: 767.7px) and (max-width: 1023.68px) {
+  .tour {
+    width: calc(50% - 20px);
+  }
 }
