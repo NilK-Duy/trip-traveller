@@ -14,16 +14,16 @@ mixin tourItem(image, price, title, review, reviewCount, duration, tourPrice)
         span.tour-duration Duration: #{duration} hours
       a.tour-button(href="#", target="_blank", rel="noopener noreferrer") Tours Price $#{tourPrice}
 
-mixin popularItem()
+mixin popularItem(image, time, title, review, reviewCount)
   .popular-item
-    .popular-image
+    .popular-top
       .popular-overlay
-      img.popular-img(src="https://images.unsplash.com/photo-1717889887785-f0528abb55c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM1fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D", alt="")
+      img.popular-image(src= image, alt="")
       span.popular-laber Must See
     .popular-content
-      span.popular-time Sep 28 10:00 AM - 1:00 PM
-      h3.popular-title The Grand Palace
+      span.popular-time= time
+      h3.popular-title= title
       .popular-review
-        img(src="./images/star.png", alt="tour-rating")
-        span 4.8 (12 reviews)
+        img(src="./images/star.png", alt="popular-rating")
+        span #{review} (#{reviewCount} reviews)
 
