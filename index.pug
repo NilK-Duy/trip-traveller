@@ -11,9 +11,17 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap", rel="stylesheet")
     link(rel="stylesheet", href="./app.css")
     link(rel="stylesheet", href="./main.css")
+    link(rel="stylesheet", href="./styles/popular.css")
   body
     .tour-list-container
       .tour-list
         +tourItem("./images/img1.png", "From $40", "Thailands Ayutthaya Temples Cruise from Bangkok", 4.8, 12, 9, 61)
         +tourItem("./images/img2.png", "From $70", "FLoating Markets Day Trip from Bangkok", 4.5, 15, 10, 61)
         +tourItem("./images/img3.png", "From $60", "Bangkok Dinner Cruise on the Chao Phraya River", 4.5, 15, 10, 61)
+
+    .container
+      .popular-list
+        +popularItem
+        +popularItem
+        +popularItem
+        +popularItem

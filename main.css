@@ -14,10 +14,16 @@ body {
   padding: 30px 24px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .tour-list-container {
   width: 100%;
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .tour-list {
@@ -91,10 +97,7 @@ body {
 
 .tour-image {
   border-radius: 20px 20px 0 0;
-  width: 100%;
   height: 239px;
-  object-fit: cover;
-  display: block;
 }
 
 .tour-top {
